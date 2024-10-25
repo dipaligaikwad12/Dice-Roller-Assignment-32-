@@ -45,10 +45,28 @@
 
     <script>
         const diceImage = document.getElementById("dice");
-        function rollDice(){
+        function diceRoll(){
             const min=1;
             const max=7;
             const randomNumber = Math.floor(Math.random() * ( max - min )) + min;
+            if(randomNumber == 1){
+                diceImage.src = "one.png";
+            }
+            else if(randomNumber == 2){
+                diceImage.src = "two.png";
+            }
+            else if(randomNumber == 3){
+                diceImage.src = "three.png";
+            }
+            else if(randomNumber == 4){
+                diceImage.src = "four.png";
+            }
+            else if(randomNumber == 5){
+                diceImage.src = "five.png";
+            }
+            else{
+                diceImage.src = "six.png";
+            }
         }
     </script>
 </body>
