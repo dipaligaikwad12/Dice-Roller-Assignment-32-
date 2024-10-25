@@ -40,8 +40,17 @@
 <body>
     <div class="dice-container">
         <img src="six.png" id="dice" class="dice-image">
-        <button class="btn">Roll The Dice</button>
+        <button class="btn" onclick="diceRoll()">Roll The Dice</button>
     </div>
+
+    <script>
+        const diceImage = document.getElementById("dice");
+        function rollDice(){
+            const min=1;
+            const max=7;
+            const randomNumber = Math.floor(Math.random() * ( max - min )) + min;
+        }
+    </script>
 </body>
 
 </html>
